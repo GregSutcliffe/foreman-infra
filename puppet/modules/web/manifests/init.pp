@@ -1,5 +1,6 @@
 class web($latest = "1.5", $htpasswds = {}) {
   include rsync::server
+  include web::firewall
 
   secure_ssh::rsync::receiver_setup { 'web':
     user           => 'website',
@@ -98,4 +99,5 @@ class web($latest = "1.5", $htpasswds = {}) {
     mode   => 0644,
     source => 'puppet:///modules/web/downloads-HEADER.html',
   }
+
 }

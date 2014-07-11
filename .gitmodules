@@ -73,3 +73,9 @@
 [submodule "puppet/modules/mount_providers"]
 	path = puppet/modules/mount_providers
 	url = https://github.com/puppetlabs/puppetlabs-mount_providers.git
+[submodule "puppet/modules/augeas"]
+	path = puppet/modules/augeas
+	url = https://labs.riseup.net/git/shared-augeas.git
+[submodule "puppet/modules/shorewall"]
+	path = puppet/modules/shorewall
+	url = git://git.puppet.immerda.ch/module-shorewall
